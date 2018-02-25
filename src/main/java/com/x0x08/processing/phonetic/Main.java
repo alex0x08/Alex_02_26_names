@@ -14,7 +14,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        PostProcessor pp = new PostProcessor();
+        //PostProcessor pp = new PostProcessor();
+        PPStripped pp = new PPStripped();
 
         pp.setContext(Arrays.asList("John Wayne",
                 "Tom Hanks",
@@ -34,7 +35,7 @@ public class Main {
         
     }
 
-    private static void doTest(PostProcessor pp, String sample) {
+    private static void doTest(PPStripped pp, String sample) {
 
         System.out.println("sample: "+sample);
         
